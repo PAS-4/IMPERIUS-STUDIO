@@ -109,7 +109,7 @@ nav.ativado .menu{
 
 .presents{
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background: url('../images/BACKGROUNDS/fundoPresents.jpeg') no-repeat;
     background-size: cover;
@@ -138,15 +138,15 @@ nav.ativado .menu{
 
 #conceitos{
     position: relative;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 150vh;
     color: #000;
 }
 
 #conceitos .card{
     position: relative;
     width: 100%;
-    height: 30%;
+    height: 20%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -213,13 +213,13 @@ nav.ativado .menu{
 
 #conceitos .card .left{
     left: -50%;
-    animation: origin ease-out 1.5s forwards;
+    animation: origin ease-out 1s forwards;
     opacity: 0;
 }
 
 #conceitos .card .right{
     left: 50%;
-    animation: origin ease-out 1.5s forwards;
+    animation: origin ease-out 1s forwards;
     opacity: 0;
 }
 
