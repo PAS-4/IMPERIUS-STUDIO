@@ -228,7 +228,7 @@ nav.ativado .menu{
 
 .swiper {
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: calc(100vh - 150px);
     padding-top: 50px;
     padding-bottom: 50px;
@@ -236,8 +236,8 @@ nav.ativado .menu{
 }
 
 .swiper-slide {
-    background-position: center;
-    background-size: cover;
+    /* background-position: center;
+    background-size: cover; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -245,8 +245,19 @@ nav.ativado .menu{
 
 .swiper-slide img {
     display: block;
-    width: 100%;
+    width: 90%;
     height: auto;
+}
+
+.swiper-pagination{
+    display: none;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after{
+    padding: 10px;
+    font-weight: bolder;
+    background-color: #00000090;
+    color: #ffff00;
 }
 
 /*SWIPER*/
