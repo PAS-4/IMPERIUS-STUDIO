@@ -120,3 +120,18 @@ nav.ativado .menu{
     align-items: center;
     flex-direction: column;
 }
+
+.presents h1, .presents span{
+    position: relative;
+    top: 150px;
+}
+
+.presents h1{
+    font-weight: lighter;
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.presents span{
+    font-size: 1.3rem;
+}
