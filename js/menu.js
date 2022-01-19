@@ -1,4 +1,4 @@
-const bar = document.querySelector('.bar')
+const bar = document.querySelector('#btn-bar')
 
 function ativarMenu(){
     const nav = document.querySelector('nav')

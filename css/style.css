@@ -14,12 +14,19 @@ html{
     color: #ffff00;
 }
 
+body{
+    background: url('../images/BACKGROUNDS/fundoPresents.jpeg') no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-attachment: fixed;
+}
+
 header{
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
-    height: 150px;
+    height: 100px;
     z-index: 1000;
     text-transform: uppercase;
 }
@@ -49,12 +56,20 @@ header nav .bar::before{
     transition: all ease-in-out .3s;
 }
 
+header nav #btn-bar{
+    position: relative;
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
 header nav .bar{
     position: relative;
     width: 30px;
     height: 4px;
     background-color: #ffff00;
-    cursor: pointer;
     transition: all ease-in-out .3s;
 }
 
@@ -70,12 +85,12 @@ header nav .bar::after{
 
 header nav .menu{
     position: absolute;
-    top: 150px;
+    top: 100px;
     left: 0;
     width: 100%;
     height: 0;
     display: flex;
-    justify-content: center;
+    justify-content: baseline;
     align-items: center;
     flex-direction: column;
     opacity: 0;
@@ -86,11 +101,11 @@ header nav .menu{
 }
 
 header nav .menu a{
+    width: 100%;
     color: #ffff00;
     font-size: 1.5rem;
-    line-height: 50px;
     text-align: center;
-    width: 100%;
+    padding: 15px;
 }
 
 nav.ativado .bar{
@@ -103,7 +118,7 @@ nav.ativado .bar::before, nav.ativado .bar::after{
 }
 
 nav.ativado .menu{
-    height: 25vh;
+    height: calc(100vh - 100px);
     opacity: 1;
     transition: all ease-in-out .5s;
 }
@@ -112,20 +127,18 @@ nav.ativado .menu{
     position: relative;
     width: 100%;
     height: 100vh;
-    background: url('../images/BACKGROUNDS/fundoPresents.jpeg') no-repeat;
-    background-size: cover;
-    background-position: 50%;
-    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background: linear-gradient(135deg, #000000, #00000010);
+    backdrop-filter: blur(1px);
 }
 
-.presents h1, .presents span{
+/* .presents h1, .presents span{
     position: relative;
     top: 150px;
-}
+} */
 
 .presents h1{
     font-weight: lighter;
@@ -142,6 +155,8 @@ nav.ativado .menu{
     width: 100%;
     height: 150vh;
     color: #000;
+    background-color: #ffffff90;
+    backdrop-filter: blur(10px);
 }
 
 #conceitos .card{
@@ -229,15 +244,13 @@ nav.ativado .menu{
 .swiper {
     position: relative;
     width: 100%;
-    height: calc(100vh - 150px);
+    height: 100vh;
     padding-top: 50px;
     padding-bottom: 50px;
     background-color: #000;
 }
 
 .swiper-slide {
-    /* background-position: center;
-    background-size: cover; */
     display: flex;
     justify-content: center;
     align-items: center;
