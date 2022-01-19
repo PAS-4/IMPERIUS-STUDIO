@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+/*GERAL*/
 *{
     margin: 0;
     padding: 0;
@@ -20,7 +20,9 @@ body{
     background-position: 50%;
     background-attachment: fixed;
 }
+/*GERAL*/
 
+/*HEADER*/
 header{
     position: fixed;
     top: 0;
@@ -29,6 +31,8 @@ header{
     height: 100px;
     z-index: 1000;
     text-transform: uppercase;
+    background-color: #00000090;
+    backdrop-filter: blur(10px);
 }
 
 header nav{
@@ -38,12 +42,19 @@ header nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #00000090;
-    backdrop-filter: blur(10px);
 }
 
 header nav span{
     font-size: 1.5rem;
+}
+
+header nav #btn-bar{
+    position: relative;
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 header nav .bar::before{
@@ -54,15 +65,6 @@ header nav .bar::before{
     height: 4px;
     background-color: #ffff00;
     transition: all ease-in-out .3s;
-}
-
-header nav #btn-bar{
-    position: relative;
-    width: 30px;
-    height: 24px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
 }
 
 header nav .bar{
@@ -93,7 +95,7 @@ header nav .menu{
     justify-content: baseline;
     align-items: center;
     flex-direction: column;
-    opacity: 0;
+    opacity: 1;
     background-color: #00000090;
     backdrop-filter: blur(50px);
     overflow: hidden;
@@ -108,6 +110,7 @@ header nav .menu a{
     padding: 15px;
 }
 
+/*ATIVAÇÃO DO MENU*/
 nav.ativado .bar{
     transform: rotate(45deg);
 }
@@ -119,10 +122,27 @@ nav.ativado .bar::before, nav.ativado .bar::after{
 
 nav.ativado .menu{
     height: calc(100vh - 100px);
-    opacity: 1;
-    transition: all ease-in-out .5s;
+    transition: all ease-in-out .3s;
+}
+/*ATIVAÇÃO DO MENU*/
+
+/* .blur{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: #00000090;
+    backdrop-filter: blur(10px);
+    z-index: 999;
 }
 
+nav.ativado .blur{
+    height: 100%;
+} */
+
+/*HEADER*/
+
+/*APRESENTAÇÃO INICIAL*/
 .presents{
     position: relative;
     width: 100%;
@@ -135,11 +155,6 @@ nav.ativado .menu{
     backdrop-filter: blur(1px);
 }
 
-/* .presents h1, .presents span{
-    position: relative;
-    top: 150px;
-} */
-
 .presents h1{
     font-weight: lighter;
     text-align: center;
@@ -149,7 +164,9 @@ nav.ativado .menu{
 .presents span{
     font-size: 1.3rem;
 }
+/*APRESENTAÇÃO INICIAL*/
 
+/*CONCEITOS*/
 #conceitos{
     position: relative;
     width: 100%;
@@ -198,6 +215,7 @@ nav.ativado .menu{
     height: 80%;
 }
 
+/*CONCEITOS (IMAGENS DE FUNDO DA DIV)*/
 #conceitos .preta .img{
     background: url('../images/CARDS/tintaPreta.png') no-repeat;
     background-size: cover;
@@ -227,6 +245,7 @@ nav.ativado .menu{
     background-size: cover;
     background-position: 50%;
 }
+/*CONCEITOS (IMAGENS DE FUNDO DA DIV)*/
 
 #conceitos .card .left{
     left: -50%;
@@ -239,9 +258,9 @@ nav.ativado .menu{
     animation: origin ease-out 1s forwards;
     opacity: 0;
 }
+/*CONCEITOS*/
 
 /*SWIPER*/
-
 .swiper {
     position: relative;
     width: 100%;
@@ -259,8 +278,10 @@ nav.ativado .menu{
 
 .swiper-slide img {
     display: block;
-    width: 90%;
+    width: 70%;
     height: auto;
+    border-radius: 15px;
+    box-shadow: 0 0 100px #ffff0060;
 }
 
 .swiper-pagination{
@@ -271,9 +292,8 @@ nav.ativado .menu{
     padding: 10px;
     font-weight: bolder;
     background-color: #00000090;
-    color: #ffff00;
+    color: #ffff0090;
 }
-
 /*SWIPER*/
 
 @keyframes origin{
