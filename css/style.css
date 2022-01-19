@@ -171,10 +171,11 @@ nav.ativado .menu{
 
 #conceitos .card .text{
     position: relative;
-    left: 0;
     width: 40%;
     height: 80%;
-    text-align: justify;
+    text-align: center;
+    padding: 0 10px;
+    overflow: auto;
 }
 
 #conceitos .card .text h2{
