@@ -112,7 +112,7 @@ header nav .menu a{
 
 /*ATIVAÇÃO DO MENU*/
 nav.ativado .bar{
-    transform: rotate(45deg);
+    transform: rotate(405deg);
 }
 
 nav.ativado .bar::before, nav.ativado .bar::after{
