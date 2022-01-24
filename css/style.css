@@ -1,13 +1,13 @@
 @charset "UTF-8";
 
 @font-face{
-    font-family: "Neonderthaw";
-    src: url("../font/Neonderthaw-Regular.ttf");
+    font-family: "Akronim";
+    src: url("../font/Akronim-Regular.ttf");
 }
 
 @font-face{
-    font-family: "Akronim";
-    src: url("../font/Akronim-Regular.ttf");
+    font-family: "Neonderthaw";
+    src: url("../font/Neonderthaw-Regular.ttf");
 }
 
 /*GERAL*/
@@ -66,19 +66,12 @@ header .logo{
     align-items: center;
 }
 
-/* header #logotipo{
-    position: relative;
-    width: 10vw;
-    z-index: 1000;
-} */
-
 header nav span{
     text-align: center;
     width: 100%;
-    font-size: calc(4vw);
+    font-size: 2rem;
     text-transform: none;
     font-family: 'Akronim';
-    /* font-weight: bolder; */
     z-index: 1000;
 }
 
@@ -196,18 +189,6 @@ nav.ativado .blur{
     background: linear-gradient(135deg, #000000, #00000010);
     backdrop-filter: blur(1px);
 }
-
-/* .presents h1{
-    font-weight: lighter;
-    text-align: center;
-    font-size: 3.5rem;
-    font-family: 'Akronim';
-}
-
-.presents span{
-    font-size: 1.3rem;
-    font-family: 'Neonderthaw';
-} */
 
 #logoPresents{
     width: 80%;
