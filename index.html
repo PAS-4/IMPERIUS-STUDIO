@@ -124,16 +124,17 @@
             <fieldset>
                 <legend>Orçamento</legend>
                     <label for="name">Nome Completo*</label>
-                    <input type="text" id="name" placeholder="Ex: José da Silva" required>
+                    <input type="text" class="campoDeTexto" id="name" placeholder="Ex: José da Silva" required>
 
                     <label for="email">Email*</label>
-                    <input type="password" id="email" placeholder="Ex: josedasilva@gmail.com" required>
+                    <input type="email" class="campoDeTexto" id="email" placeholder="Ex: josedasilva@gmail.com" required>
 
                     <label for="descr">Descrição*</label>
-                    <textarea name="descr" id="descr" cols="32" rows="8" placeholder="Olá! É um prazer ver você por aqui!! Logo daremos o retorno sanando suas dúvidas! (Agendamento.. Valores..)." required></textarea>
+                    <textarea name="descr" class="campoDeTexto" id="descr" cols="32" rows="8" placeholder="Olá! É um prazer ver você por aqui!! Logo daremos o retorno sanando suas dúvidas! (Agendamento.. Valores..)." required></textarea>
 
                     <label for="arquivo" class="arquivo">FOTO</label>
                     <input type="file" id="arquivo" value="FOTO">
+                    
                     <input type="submit" id="enviar" value="ENVIAR">
             </fieldset>
         </form>
