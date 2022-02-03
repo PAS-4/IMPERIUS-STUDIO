@@ -482,7 +482,8 @@ label, .campoDeTexto, #enviar{
 }
 
 #msg{
-    height: 100px;
+    height: 20vh;
+    min-height: 100px;
     resize: none;
 }
 
