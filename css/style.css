@@ -430,7 +430,7 @@ nav.ativado .menu{
     justify-content: center;
     align-items: center;
     background: url('../images/BACKGROUNDS/fundoContatosRodape.png');
-    background-size: cover;
+    background-size: auto;
     background-position: 50%;
     background-attachment: fixed;
     box-shadow: 0px -15px 15px #00000090;
@@ -525,6 +525,47 @@ input[type='file'] { /*input de arquivo escondido*/
     cursor: pointer;
 }
 /*ORÇAMENTO*/
+
+/*FOOTER*/
+footer{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../images/BACKGROUNDS/fundoContatosRodape.png');
+    background-position: 50%;
+    background-attachment: fixed;
+}
+
+footer .perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .perfil img{
+    width: 50%;
+}
+
+footer .perfil .redes{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .perfil .redes i{
+    color: #ffff00;
+}
+
+footer .perfil .fotoInfo{
+    width: 100%;
+}
+
+footer .perfil .fotoInfo .fotoFooter{
+    margin: auto;
+}
+/*FOOTER*/
 
 @keyframes origin{
     100%{
