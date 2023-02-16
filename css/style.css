@@ -537,33 +537,91 @@ footer{
 }
 
 footer .perfil{
+    position: relative;
+    width: 100vw;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 20px;
 }
 
 footer .perfil img{
-    width: 50%;
+    width: 40%;
 }
 
 footer .perfil .redes{
-    width: 50%;
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
 footer .perfil .redes i{
+    margin: 15px;
+    font-size: 20pt;
     color: #ffff00;
 }
 
 footer .perfil .fotoInfo{
+    position: relative;
     width: 100%;
+    text-align: center;
 }
 
 footer .perfil .fotoInfo .fotoFooter{
-    margin: auto;
+    border-radius: 50%;
+    box-shadow: 0px 0px 30px#ffffff30;
+}
+
+footer .perfil .fotoInfo .info{
+    display: none;
+}
+
+footer .linksFooter{
+    position: relative;
+    width: 100vw;
+    height: 40vh;
+    text-align: center;
+    background-color: #ffffff10;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px #ffffff50;
+}
+
+footer .linksFooter p{
+    font-size: 16pt;
+}
+
+footer .linksFooter .linksConceitos h3,
+footer .linksFooter .linksOrcamentos h3{
+    font-size: 14pt;
+}
+
+footer .linksFooter .linksConceitos p,
+footer .linksFooter .linksOrcamentos p{
+    font-size: 8pt;
+    margin: 3px 0;
+}
+
+footer .linksFooter .links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+}
+
+footer .linksFooter hr{
+    width: 80vw;
+    height: 3px;
+    background-color: #ffff00;
+    border-color: #ffff00;
+}
+
+footer .linksFooter .dev{
+    font-size: 8pt;
 }
 /*FOOTER*/
 
